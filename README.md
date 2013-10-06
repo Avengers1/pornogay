@@ -3,7 +3,7 @@ if (autoModerator !== undefined)
 
 String.prototype.equalsIgnoreCase     = function(other)    { return typeof other !== 'string' ? false : this.toLowerCase() === other.toLowerCase(); };
 var autoModeratorModel = require('app/base/Class').extend({
-	version: "Bot AntiMendigo Ligado!",
+	version: "O Exterminador de Mendigos e Zueiros ",
 	bannedWords: [		
 		         ':trollface:',
 			 'spoder',
@@ -79,7 +79,7 @@ var autoModeratorModel = require('app/base/Class').extend({
 		API.on(API.CHAT,          this.proxy.chat);
 		API.on(API.CHAT_COMMAND,  this.proxy.chatCommand);
 		console.log('Antitroll ' + this.version + ' Ativo!')
-		API.sendChat('/em  ' + this.version + '. 1.0!')
+		API.sendChat('/em  ' + this.version + '. Ligado!')
 	},
 	close: function() {
 		API.off(API.CHAT,          this.proxy.onChat);
