@@ -3,7 +3,7 @@ if (autoModerator !== undefined)
 
 String.prototype.equalsIgnoreCase     = function(other)    { return typeof other !== 'string' ? false : this.toLowerCase() === other.toLowerCase(); };
 var autoModeratorModel = require('app/base/Class').extend({
-	version: "O Exterminador de Mendigos [Ativado!] ",
+	version: "foda-ce mendigos huehue [ON]",
 	bannedWords: [		
 		         ':trollface:',
 			 'spoder',
@@ -67,7 +67,27 @@ var autoModeratorModel = require('app/base/Class').extend({
                          '/em agora é seu fã!',
                          'autofan',
                          'AutoFanBack',
-                         'FanBack'
+                         'FanBack',
+                         'Fan4Fan',
+                         'Fan 4 fan',
+                         'FAN 4 FAN',
+                         'FAN4FAN',
+                         'sala lixo',
+                         'adms de merda', 
+                         'kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk',
+                         'musica lixa',
+                         'me da featured?',
+                         'FaN4FaN',
+                         'Fan to fan',
+                         'FAN TO FAN',
+                         '/me FAN 4 FAN', 
+                         '/me fan 4 fan',
+                         '/me fan4fan',
+                         '/me FAN4FAN',
+                         '/em FAN 4 FAN',
+                         '/em fan 4 fan',
+                         '/em fan4fan',
+                         '/em FAN4FAN'
  
   ],
 	mutedUsers: [],
@@ -79,7 +99,7 @@ var autoModeratorModel = require('app/base/Class').extend({
 		API.on(API.CHAT,          this.proxy.chat);
 		API.on(API.CHAT_COMMAND,  this.proxy.chatCommand);
 		console.log('Antitroll ' + this.version + ' Ativo!')
-		API.sendChat('/em  ' + this.version + 'Editador por Avengers')
+		API.sendChat('/em  ' + this.version + '. Editado por Avengers Versao 1.2')
 	},
 	close: function() {
 		API.off(API.CHAT,          this.proxy.onChat);
@@ -137,3 +157,4 @@ var autoModeratorModel = require('app/base/Class').extend({
 });
 var autoModerator = new autoModeratorModel();
      
+                           
